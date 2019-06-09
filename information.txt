@@ -1,0 +1,26 @@
+This project is entirely my experiment with the Web Speech API.
+It's a very powerful browser interface that allows you to record human speech and convert it into text. We will also use it to do the opposite - reading out strings in a human-like voice. 
+
+To showcase the ability of this API I have done the following things with it :
+1) Takes notes using voice to text input or traditional keyboard input.
+2) Saving the notes to the local storage.
+3) Shows all the nodes and gives the option to listen to them via Speech Synthesis.
+
+
+					--------- SpeechRecognition (Speech -> Text)
+					|
+WebSpeechAPI		|
+has 2 independet ---|
+Interfaces			|
+					|
+					--------- SpeechSynthesis (Text -> Speech)
+
+Like other browser API's such as the location fetch API(You can check out my other React made project for it as well.), it is quite 
+accurate in nature. Unfortunately this API is only available in chrome browser.
+
+
+The API is accessible through the speechSynthesis object and there are a couple of methods for playing, pausing and other audio related stuff. It also has a couple of cool options that change the pitch, rate, and even the voice of the reader.
+
+All I used is the speak() method. It expects one argument, an instance of the SpeechSynthesisUtterance class. 
+
+
